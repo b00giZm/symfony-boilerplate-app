@@ -1,8 +1,14 @@
-symfony-boilerplate
-===================
+symfony-boilerplate FrontendBundle
+==================================
 
-* `AppBundle` documentation: [src/AppBundle/Resources/doc/index.md](https://github.com/b00giZm/symfony-boilerplate/blob/master/myapp/src/AppBundle/Resources/doc/index.md)
-* `FrontendBundle` documentation: [src/FrontendBundle/Resources/doc/index.md](https://github.com/b00giZm/symfony-boilerplate/blob/master/myapp/src/FrontendBundle/Resources/doc/index.md)
+Use this bundle to organize all your frontend assets, like Javascripts and [SASS](http://sass-lang.com/) stylesheets, to be later handled, processed and compiled by [Gulp.js](http://gulpjs.com/). The concepts of those bundle are mostly inspired by [Florian Eckerstorfer](https://twitter.com/Florian_)'s article, ["Building Symfony2 Applications with Gulp"](https://florian.ec/articles/buliding-symfony2-with-gulp/). Good job, man!
+
+Directories
+-----------
+
+* **Resources/public/components** - Bower components will be installed to this directory
+* **Resources/public/lib** - Javascripts. Feel free to use [CommonJS modules](http://wiki.commonjs.org/wiki/Modules) and/or [ES6 modules](https://github.com/ModuleLoader/es6-module-loader/wiki/Brief-Overview-of-ES6-Module-syntax) and features. It will picked up by Gulp.js and compiled to ES5 syntax
+* **Resources/public/sass** - SASS stylesheets
 
 Maintainer
 ----------

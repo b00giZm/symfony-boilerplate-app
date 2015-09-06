@@ -1,9 +1,24 @@
 # Learn more about services, parameters and containers at
 # http://symfony.com/doc/current/book/service_container.html
 parameters:
-#    parameter_name: value
+    elastica.connection:
+      host: "%elasticsearch_host%"
+      port: "%elasticsearch_port%"
+
+    predis.connection:
+      schema: tcp
+      host:   "%redis_host%"
+      port:   "%redis_port%"
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    elastica.client:
+        class: Elastica\Client
+        arguments: ["%elastica.connection%"]
+
+    elastica.search:
+        class: Elastica\Search
+        arguments: ["@elastica.client"]
+
+    predis.client:
+        class: Predis\Client
+        arguments: ["%predis.connection%"]
