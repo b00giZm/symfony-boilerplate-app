@@ -1,5 +1,5 @@
 {
-    "name": "b00giZm/symfony-boilerplate-app",
+    "name": "b00gizm/symfony-boilerplate-app",
     "description": "Fork of symfony/symfony-standard to use with symfony-boilerplate.",
     "version": "0.1.0",
     "keywords": ["boilerplate", "starter-project", "docker"],
